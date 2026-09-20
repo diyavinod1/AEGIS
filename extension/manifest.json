@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Aegis Sentinel",
+  "version": "2.0.0",
+  "description": "Browser-side sentinel for Aegis agent security.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {"default_title": "Aegis Sentinel", "default_popup": "popup.html"},
+  "content_scripts": [{"matches":["<all_urls>"],"js":["content.js"],"run_at":"document_idle"}]
+}
