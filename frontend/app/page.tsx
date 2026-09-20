@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Shield, Activity, Bot, LockKeyhole, Radar, Play, CheckCircle2, XCircle, RotateCcw, Database, Globe, Terminal, BrainCircuit, ArrowRight, CircleDot, AlertTriangle } from 'lucide-react';
 
-const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API = process.env.NEXT_PUBLIC_API_URL || 'https://aegis-jnm4.onrender.com';
 
 type AgentTrace = {step:number;type:string;title:string;detail:string;status:string;risk:number;tool:string;timestamp:string};
 type AgentRun = {run_id:string;scenario:string;goal:string;status:string;decision:string;risk_score:number;blocked_actions:number;allowed_actions:number;memory:string[];trace:AgentTrace[]};
